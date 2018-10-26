@@ -1,0 +1,70 @@
+{% extends "layout_bsa.html" %}
+
+{% block page_title %}
+  Pay or challenge a Penalty Charge Notice
+{% endblock %}
+
+{% block content %}
+
+<!-- bsa table style overrides -->
+<style>
+table tr td {
+    border: none;
+    display: table-cell;
+    vertical-align: text-top;
+    padding: 2rem 3rem 0 0;
+  }
+  table tr td:nth-child(1) {
+    width: 30%;
+}
+  table tr td:nth-child(2) {
+     padding-right: 3rem;
+     width: 30%; 
+}
+table tr td:nth-child(3) {
+     padding-right: 3rem;
+}
+</style>
+
+<main id="content" role="main">
+  
+  <p>
+    <a href="index"> Back to all prototypes</a>
+  </p>
+  
+<div class="heading-group">
+     <p>Payment Prototype</p>
+     <h1 class="heading-xlarge">
+      Gov Pay Journeys
+     </h1>
+   </div>
+        
+        <table id="review-table-one" class="check-table">
+
+     <tbody>
+       <tr>
+         <td><a href="govPay/penalty-view-medic">Full payment</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+         
+         
+                <tr>
+         <td><a href="">Partial payment</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+         
+                         <tr>
+         <td><a href="">Failed payment</a></td>
+           <td></td>
+         <td class="right"><a href="#"></a></td>
+       </tr>
+
+     </tbody>
+   </table>
+
+  
+</main>
+
+{% endblock %}
