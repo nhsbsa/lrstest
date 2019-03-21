@@ -1,0 +1,314 @@
+{% extends "layout_bsa.html" %}
+{% block page_title %}
+Challenge a Penalty Charge Notice
+{% endblock %}
+{% block content %}
+<style>
+   .textarea {
+   width: 75%;
+   min-height: 200px;
+   -webkit-box-sizing: border-box;
+   -moz-box-sizing: border-box;
+   box-sizing: border-box;
+   font-weight: 400;
+   text-transform: none;
+   font-size: 16px;
+   line-height: 1.25;
+   padding: 5px 4px 4px;
+   border: 2px solid #0b0c0c;
+   margin-top: 10px;
+   }
+
+
+   .example-icon-list p {
+    display: inline-block;
+    font-size: 16px;
+    padding-left: 1em;
+    vertical-align: middle;
+    margin-bottom: 0;
+  }
+  .list--check, {
+    list-style: none;
+    padding-left: 32px;
+  }
+  .list--check li::before {
+    background-image:
+  }
+  .standard {
+    vertical-align: middle;
+    padding: 0;
+    counter-reset: standard-counter;
+  }
+  .standard>li::before {
+    width: 10%;
+  }
+  .standard>li {
+    list-style: none;
+    display: block;
+    border-top: 1px solid #bfc1c3;
+    padding: 1em 0 0.5em 0;
+    margin: 0;
+    page-break-inside: avoid;
+  }
+  .updated-standard li .point {
+    width: 67%;
+  }
+  .standard>li .point {
+    padding-left: 3em
+  }
+  .standard>li .point {
+    font-size: 18px;
+    line-height: 1.2;
+  }
+  .circle-step {
+    min-width: 36px;
+    min-height: 38px;
+    line-height: 36px;
+  }
+  .circle {
+    display: inline-block;
+    border-radius: 50%;
+    background: #0b0c0c;
+    color: #fff;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    font-weight: bold;
+    text-align: center;
+    position: absolute;
+    margin: 0em;
+  }
+  .panel_side {
+    display: block;
+    padding-top: 15px;
+    background-color: #DEE0E2;
+  }
+  .panel_side_inner {
+    width: auto;
+    margin-left: 15px;
+    margin-right: 15px;
+    padding-bottom: 5px;
+  }
+  .display_field {
+    margin-bottom: 20px;
+    display: block;
+  }
+  .display_field_value h3 {
+    font-family: "nta", Arial, sans-serif;
+    font-size: 19px;
+    line-height: 1.31579;
+    text-transform: none;
+    font-weight: 700;
+    margin-bottom: 5px;
+  }
+  .income-img {
+    width: 283px;
+  }
+  @media(max-width:640px) {
+    .income-img {
+      width: 100%
+    }
+  }
+</style>
+
+
+<main id="content" role="main">
+   <div class="grid-row">
+      <div class="column-full">
+         <div class="phase-banner">
+            <p>
+               <strong class="phase-tag">BETA</strong>
+               <span>This is a new service – your <a href="#">feedback</a> will help us to improve it.</span>
+            </p>
+         </div>
+      </div>
+   </div>
+   <div class="grid-row">
+      <div class="column-two-thirds">
+         <div id="back">
+            <a href="javascript:history.go(-1)" id="back-button" class="link-back">Back</a>
+            <script type="text/javascript">
+               document.getElementById('back-button');
+            </script>
+         </div>
+         <div class="heading-group">
+            <p>Challenge a Penalty Charge Notice</p>
+            <h1 class="heading-large">Tell us about your prescription</h1>
+         </div>
+         <form action="contact" method="get" class="form">
+            <!-- <form action="#" method="get" class="form">
+               <div class="form-group">
+                 <p>Can you provide more detail? Do not include personal or financial information, like your National Insurance number or credit card details.</p>
+                  <input class="form-control" style="width: 75%; min-height: 200px;" id="ref" name="ref" type="text">
+                  <br>
+               </div> -->
+            <!-- <label class="govuk-label" for="more-detail">
+               Can you provide more detail?
+               </label>
+               <span id="more-detail-hint" class="govuk-hint">
+               Do not include personal or financial information, like your National Insurance number or credit card details.
+               </span> 
+               <p>When did you claim your prescription?</p> -->
+
+  <!--           <div class="form-group">
+               <fieldset>
+                  <legend>
+                     <span class="heading-medium">
+                     What date did you claim your prescription?
+                     </span> -->
+                     <!-- <p>What date did you claim your prescription?</p> -->
+                     
+                   <!--   <span class="form-hint" style="margin-top: 10px;">For example, 15 01 2019</span>
+                  </legend>
+                  <div class="form-date">
+                     <div class="form-group form-group-day">
+                        <label class="form-label" for="dob-day">Day</label>
+                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                     </div>
+                     <div class="form-group form-group-month">
+                        <label class="form-label" for="dob-month">Month</label>
+                        <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                     </div>
+                     <div class="form-group form-group-year">
+                        <label class="form-label" for="dob-year">Year</label>
+                        <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                     </div>
+                  </div>
+               </fieldset>
+            </div> -->
+            <div class="form-group">
+               <fieldset>
+                  <legend>
+                     <br>
+                     <span class="heading-medium">
+                     What payment method did you use?
+                     </span> 
+                     <!-- <span class="form-hint">For example, 31 03 1980</span> -->
+                  </legend>
+                  <!-- <p>What payment method did you use?</p> -->
+                  <!--  <div class="form-date">
+                     <div class="form-group form-group-day">
+                        <label class="form-label" for="dob-day">Day</label>
+                        <input class="form-control" id="dob-day" name="dob-day" type="number" pattern="[0-9]*" min="0" max="31">
+                     </div>
+                     <div class="form-group form-group-month">
+                        <label class="form-label" for="dob-month">Month</label>
+                        <input class="form-control" id="dob-month" name="dob-month" type="number" pattern="[0-9]*" min="0" max="12">
+                     </div>
+                     <div class="form-group form-group-year">
+                        <label class="form-label" for="dob-year">Year</label>
+                        <input class="form-control" id="dob-year" name="dob-year" type="number" pattern="[0-9]*" min="0" max="2016">
+                     </div>
+                     </div> -->
+                  <div class="form-group">
+                     <div class="form-item-wrapper">
+                        <div class="multiple-choice single-line">
+                           <input type="radio" id="2" value="2" name="plan">
+                           <label class="form-control-radio minor-checkbox" for="2">
+                           Debit or credit card
+                           </label>
+                        </div>
+                        <div class="multiple-choice single-line" data-target="cash">
+                           <input type="radio" id="3" value="3" name="plan">
+                           <label class="form-control-radio minor-checkbox" for="3">
+                           Cash
+                           </label>
+                        </div>
+                        <div class="multiple-choice single-line" data-target="other">
+                           <input type="radio" id="4" value="4" name="plan">
+                           <label class="form-control-radio minor-checkbox" for="4">
+                           Other
+                           </label>
+                        </div>
+                        <div class="panel panel-border-narrow js-hidden" id="other">
+                           <p>Please specify a payment method</p>
+                           <div class="form-item-wrapper">
+                              <div class="form-group">
+                                 <!-- <label class="form-label" for="dob-day">Day</label> -->
+                                 <input class="form-control" id="email" name="email" type="text">
+                              </div>
+                           </div>
+                        </div>
+                        <p class="form-block">or</p>
+                        <div class="multiple-choice single-line" data-target="free">
+                           <input type="radio" id="5" value="5" name="plan">
+                           <label class="form-control-radio minor-checkbox" for="5">
+                           I didn't pay
+                           </label>
+                        </div>
+                     </div>
+                  </div>
+               </fieldset>
+            </div>
+
+
+            <span class="heading-medium">
+               How to send proof of your payment or age
+            </span> 
+            <h4 class="heading-small">It’s as easy as sending a photo on your phone</h4>
+
+            <p>If you paid for your prescription, you can send a photo or scan of a receipt or bank statement. Remember to blank out your account number and sort code if sending a bank statement.</p>
+
+          
+            <details>
+                <summary><span class="summary">I don't have proof of payment</span></summary>
+                <div class="panel panel-border-narrow" id="details-content-0" aria-hidden="false">
+                   <p>If you cannot provide a receipt or bank statement, you must write and sign a letter stating that you had paid for your prescription. You must then send us a scan or photograph the letter.</p>
+                </div>
+             </details>
+             <br>
+
+
+            <p>If you are under 16 or over 60, you can send a photo or scan of your birth certificate or pasport.</p>
+
+            <ol class="standard">
+               <li style="border-top: none;">
+                  <span class="circle circle-step">1</span>
+                  <div class="point">
+                     <p>Take a photo of your proof using a mobile phone or digital camera</p>
+                  </div>
+               </li>
+               <li>
+                  <span class="circle circle-step">2</span>
+                  <div class="point">
+                     <p>Check the image is clear and you can read the information.</p>
+                  </div>
+               </li>
+               <li>
+                  <span class="circle circle-step">3</span>
+                  <div class="point">
+                     <p>Upload your proof</p>
+                  </div>
+               </li>
+            </ol>
+            <br>
+
+
+            <div class="form-group">
+              <label class="form-label" for="file-upload-1">
+                Upload a file
+              </label>
+              <input class="govuk-file-upload" id="file-upload-1" name="file-upload-1" type="file">
+            </div>
+            <br>
+            <br>
+            <br>
+            <br>
+         
+            <span class="heading-medium">
+               Can you provide more details?
+            </span> 
+            <!-- <p>Can you provide more details?</p> -->
+            <textarea class="textarea" id="more-detail" name="more-detail" rows="5" aria-describedby="more-detail-hint"></textarea>
+            <br>
+            <br>
+            <div class="form-item-wrapper">
+               <div class="form-group">
+                  <input class="button" type="submit" value="Next">
+               </div>
+            </div>
+            <p class="navigation"><a class="cancel" href="start">Cancel</a></p>
+         </form>
+      </div>
+   </div>
+</main>
+{% endblock %}
